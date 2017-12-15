@@ -1,0 +1,101 @@
+{
+  "import redux {Provider}": {
+    "prefix": "imrp",
+    "body": "import {Provider} from 'react-redux';$0",
+    "description": "Imports Provider from react-redux module."
+  },
+  "new connected react component file": {
+    "prefix": "ncrc",
+    "body":
+      "import PropTypes from 'prop-types';\nimport React from 'react';\nimport {connect} from 'react-redux';\n\nconst mapStateToProps = state => ({});\n\nconst mapDispatchToProps = dispatch => ({});\n\nconst mergeProps = (stateProps, dispatchProps, props) => ({});\n\nconst ${1:componentName} = ({}) => (\n\t${0:<div></div>}\n);\n\n${1:componentName}.propTypes = {};\n\nexport default connect(mapStateToProps, mapDispatchToProps, mergeProps)(${1:componentName});",
+    "description": "All inclusive connected react component."
+  },
+  "new redux module actions file": {
+    "prefix": "nrma",
+    "body":
+      "import {createActions} from 'redux-actions';\n\nexport default createActions({\n\t${1:moduleName}: {\n\t\t$0\n\t}\n});",
+    "description": "All inclusive redux module action/action creators."
+  },
+  "redux action creator identity": {
+    "prefix": "rmai",
+    "body": "'${1:moduleName}/${2:ACTION_NAME}',",
+    "description": "Identity action creator."
+  },
+  "redux action creator": {
+    "prefix": "rma",
+    "body": "${1:ACTION_NAME}: (${2:value}) => ({$3}),$0",
+    "description": "Basic action creator."
+  },
+  "redux action creator w/meta": {
+    "prefix": "rmam",
+    "body":
+      "${1:ACTION_NAME}: [\n\t(${2:value}) => ({$3}),\n\t(${2:value}) => ({$4})\n],$0",
+    "description": "Action creator with meta payload."
+  },
+  "new redux module reducer file": {
+    "prefix": "nrmr",
+    "body":
+      "import {handleActions} from 'redux-actions;\nimport * as actions from './actions';\n\nconst defaultState = {};\nexport default handleActions({\n\t$0\n}, defaultState);",
+    "description": "Module reducer file"
+  },
+  "redux action reducer": {
+    "prefix": "rmr",
+    "body":
+      "[actions.${1.actionName}]: (state, payload, meta) => ({\n\t...state,\n\t$2\n}),$0",
+    "description": "Reducer for a given redux action."
+  },
+  "new redux selector file": {
+    "prefix": "nrms",
+    "body":
+      "import {createSelector} from 'reselect';\n\nconst getRoot = state => state$1;$0",
+    "description": "Redux module selector file."
+  },
+  "redux selector": {
+    "prefix": "rms",
+    "body":
+      "const get${1:selectorName} = createSelector(${2:getRoot}, (${3:root}) => ({$4});$0",
+    "description": "Redux module selector file."
+  },
+  "new redux sagas files": {
+    "prefix": "nrmsg",
+    "body":
+      "import {call, put, select, takeEvery} from 'redux-saga/effects';\nimport * as actions from './actions';\nimport * as selectors from './selectors';\n\nexport default [\n\t$0\n];",
+    "description": "Redux module sagas file."
+  },
+  "redux exported saga": {
+    "prefix": "rmes",
+    "body": "() => ${1:takeEvery}(actions.${2:actionName}, ${3:funcName}),$0"
+  },
+  "generator function": {
+    "prefix": "gfn",
+    "body": "function* ${1:funcName}() {\n\t$2\n}$0",
+    "description": "Generator function."
+  },
+  "yield put": {
+    "prefix": "yput",
+    "body": "yield put(${1:actionName}($2);$0",
+    "description": "Yield redux saga put method."
+  },
+  "yield select": {
+    "prefix": "yselect",
+    "body": "yield select(selectors.${1:selectorName});$0"
+  },
+  "root saga file": {
+    "prefix": "roots",
+    "body":
+      "import {all, fork} from 'redux-saga/effects';\n\nconst sagas = [];\n\n export default function* root() {\n\tyield all(sagas\n\t\t.map(saga => fork(saga))\n\t);\n}",
+    "description": "New root saga file."
+  },
+  "root reducer file": {
+    "prefix": "rootr",
+    "body":
+      "import {combineReducers} from 'redux';\n\nexport default combineReducers({\n\t$0\n}",
+    "description": "New root reducer file."
+  },
+  "configure store file": {
+    "prefix": "cstore",
+    "body":
+      "import createSagaMiddleware from 'redux-saga';\nimport {createStore, applyMiddleware, compose} from 'redux';\nimport reducer from './reducer';\nimport sagas from './sagas';\n\nexport default (initialState={}, additionalMiddleware = [], composeFunc = compose) => {\n\tconst middleware = [createSagaMiddleware()].concat(additionalMiddleware);\nconst store = createStore(\nreducer, initialState, composeFunc(applyMiddleware(...middleware)));\n\tif (module.hot) {\n\t\tmodule.hot.accept('./reducer', () => {\n\t\t\tconst nextRootReducer = require('./reducer').default;\n\t\t\tstore.replaceReducer(nextRootReducer);\n\t\t})\n\t}\n};",
+    "description": "Configure store creation file."
+  }
+}

@@ -278,7 +278,7 @@
   "higher order component": {
     "prefix": "hoc",
     "body":
-      "C => {\n\treturn class extends Component {\n\t\tconstructor(...rest) {\n\t\t\tsuper(rest);\n\t}\n\n\t\trender() {\n\t\t\t$0return <C {...this.props} />;\n\t\t}\n\t};\n}",
+      "C => {\n\treturn class extends Component {\n\t\tconstructor(...rest) {\n\t\t\tsuper(rest);\n\t}\n\n\t\tgetChildContext() {\n\t\t\treturn {\n\t\t\t\t};\n\t\t}\n\n\t\trender() {\n\t\t\t$0return <C {...this.props} />;\n\t\t}\n\t};\n}",
     "description": "basic higher order component function"
   },
   "ref": {

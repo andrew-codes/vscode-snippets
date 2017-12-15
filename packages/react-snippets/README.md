@@ -235,7 +235,7 @@ There you have either the option to show the already installed snippets or insta
       </tr><tr>
         <td>hoc</td>
         <td style="width: 30%;">higher order component</td>
-        <td><code><pre>C =&gt; {&#10;&#9;return class extends Component {&#10;&#9;&#9;constructor(...rest) {&#10;&#9;&#9;&#9;super(rest);&#10;&#9;}&#10;&#10;&#9;&#9;render() {&#10;&#9;&#9;&#9;$0return &lt;C {...this.props} /&gt;;&#10;&#9;&#9;}&#10;&#9;};&#10;}</pre></code></td>
+        <td><code><pre>C =&gt; {&#10;&#9;return class extends Component {&#10;&#9;&#9;constructor(...rest) {&#10;&#9;&#9;&#9;super(rest);&#10;&#9;}&#10;&#10;&#9;&#9;getChildContext() {&#10;&#9;&#9;&#9;return {&#10;&#9;&#9;&#9;&#9;};&#10;&#9;&#9;}&#10;&#10;&#9;&#9;render() {&#10;&#9;&#9;&#9;$0return &lt;C {...this.props} /&gt;;&#10;&#9;&#9;}&#10;&#9;};&#10;}</pre></code></td>
       </tr><tr>
         <td>cref</td>
         <td style="width: 30%;">ref</td>
