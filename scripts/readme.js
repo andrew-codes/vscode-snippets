@@ -19,13 +19,15 @@ const readmeContents = `${aboutContents}
   </tr>
 </thead>
 <tbody>
-${Object.values(snippets)
+${Object.keys(snippets)
   .map(
-    snippet =>
+    key =>
       `<tr>
-        <td>${snippet.prefix}</td>
-        <td style="width: 30%;">${snippet.description}</td>
-        <td><code><pre>${htmlEncoder.htmlEncode(snippet.body)}</pre></code></td>
+        <td>${snippets[key].prefix}</td>
+        <td style="width: 30%;">${key}</td>
+        <td><code><pre>${htmlEncoder.htmlEncode(
+          snippets[key].body,
+        )}</pre></code></td>
       </tr>`,
   )
   .join('')}
