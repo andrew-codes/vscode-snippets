@@ -6,7 +6,6 @@ const snippets = require(path.join(process.cwd(), 'snippets', 'snippets.json'));
 const aboutContents = fs.readFileSync(path.join(process.cwd(), 'about.md'));
 
 const readmeContents = `${aboutContents}
-
 ## Snippets
 
 <table>
@@ -26,7 +25,9 @@ ${Object.keys(snippets)
         <td>${snippets[key].prefix}</td>
         <td style="width: 30%;">${key}</td>
         <td><code><pre>${htmlEncoder.htmlEncode(
-          snippets[key].body,
+          Array.isArray(snippets[key].body)
+            ? snippets[key].body.join('\n')
+            : snippets[key].body,
         )}</pre></code></td>
       </tr>`,
   )
