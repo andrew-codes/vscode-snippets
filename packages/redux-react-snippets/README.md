@@ -116,7 +116,7 @@ function* ${1:funcName}() {
 ```javascript
 yield put(${1:actionName}($2);$0
 ```
-### yield select (`yselect`)
+### yield select (`ysel`)
 ```javascript
 yield select(selectors.${1:selectorName});$0
 ```
@@ -130,7 +130,7 @@ const sagas = [];
 	yield all(sagas
 		.map(saga => fork(saga))
 	);
-}
+};
 ```
 ### root reducer file (`rootr`)
 ```javascript
@@ -138,7 +138,7 @@ import {combineReducers} from 'redux';
 
 export default combineReducers({
 	$0
-}
+};
 ```
 ### configure store file (`cstore`)
 ```javascript
