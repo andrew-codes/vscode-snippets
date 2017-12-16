@@ -95,7 +95,7 @@
   "configure store file": {
     "prefix": "cstore",
     "body":
-      "import createSagaMiddleware from 'redux-saga';\nimport {createStore, applyMiddleware, compose} from 'redux';\nimport reducer from './reducer';\nimport sagas from './sagas';\n\nexport default (initialState={}, additionalMiddleware = [], composeFunc = compose) => {\n\tconst middleware = [createSagaMiddleware()].concat(additionalMiddleware);\nconst store = createStore(\nreducer, initialState, composeFunc(applyMiddleware(...middleware)));\n\tif (module.hot) {\n\t\tmodule.hot.accept('./reducer', () => {\n\t\t\tconst nextRootReducer = require('./reducer').default;\n\t\t\tstore.replaceReducer(nextRootReducer);\n\t\t})\n\t}\n};",
+      "import createSagaMiddleware from 'redux-saga';\nimport {createStore, applyMiddleware, compose} from 'redux';\nimport reducer from './reducer';\nimport sagas from './sagas';\n\nexport default (initialState={}, additionalMiddleware = [], composeFunc = compose) => {\n\tconst middleware = [createSagaMiddleware()].concat(additionalMiddleware);\n\tconst store = createStore(\nreducer, initialState, composeFunc(applyMiddleware(...middleware)));\n\tif (module.hot) {\n\t\tmodule.hot.accept('./reducer', () => {\n\t\t\tconst nextRootReducer = require('./reducer').default;\n\t\t\tstore.replaceReducer(nextRootReducer);\n\t\t})\n\t}\n return store;};",
     "description": "Configure store creation file."
   }
 }

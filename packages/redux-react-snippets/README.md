@@ -149,7 +149,7 @@ import sagas from './sagas';
 
 export default (initialState={}, additionalMiddleware = [], composeFunc = compose) => {
 	const middleware = [createSagaMiddleware()].concat(additionalMiddleware);
-const store = createStore(
+	const store = createStore(
 reducer, initialState, composeFunc(applyMiddleware(...middleware)));
 	if (module.hot) {
 		module.hot.accept('./reducer', () => {
@@ -157,5 +157,5 @@ reducer, initialState, composeFunc(applyMiddleware(...middleware)));
 			store.replaceReducer(nextRootReducer);
 		})
 	}
-};
+ return store;};
 ```
