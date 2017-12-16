@@ -1,7 +1,0 @@
-{
-  "suite": {
-    "prefix": "ste",
-    "body": "suite('${1:suite name}', () => {\n\t$0\n});",
-    "description": "Test suite."
-  }
-}

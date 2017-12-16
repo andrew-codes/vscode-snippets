@@ -1,0 +1,57 @@
+{
+  "Testing Before": {
+    "prefix": "before",
+    "body": ["before(function() => {", "\t$1", "});$0"],
+    "description": "Before "
+  },
+  "Testing Before Each": {
+    "prefix": "be",
+    "body": ["beforeEach(function() => {", "\t$1", "});$0"],
+    "description": "Before Each"
+  },
+  "Testing After": {
+    "prefix": "after",
+    "body": ["after(function() => {", "\t$1", "});$0"],
+    "description": "After"
+  },
+  "Testing After Each": {
+    "prefix": "ae",
+    "body": ["afterEach(function() => {", "\t$1", "});$0"],
+    "description": "After Each"
+  },
+  "Testing Suite": {
+    "prefix": "ste",
+    "body": ["suite('$1', function() => {", "\t$2", "});$0"],
+    "description": "Suite"
+  },
+  "Testing Describe": {
+    "prefix": "des",
+    "body": ["describe('$1', function() => {", "\t$2", "});$0"],
+    "description": "Describe"
+  },
+  "Testing Suite Setup": {
+    "prefix": "steup",
+    "body": ["suiteSetup(function() => {", "\t$1", "});$0"],
+    "description": "SuiteSetup"
+  },
+  "Testing Setup": {
+    "prefix": "setup",
+    "body": ["setup(function() => {", "\t$1", "});$0"],
+    "description": "Setup"
+  },
+  "Testing Suite Teardown": {
+    "prefix": "stedown",
+    "body": ["suiteTeardown(function() => {", "\t$1", "});$0"],
+    "description": "SuiteTeardown"
+  },
+  "Testing Teardown": {
+    "prefix": "teardown",
+    "body": ["teardown(function() => {", "\t$1", "});$0"],
+    "description": "Teardown"
+  },
+  "Testing Test": {
+    "prefix": "tst",
+    "body": ["test('$1', function() => {", "\t$2", "});"],
+    "description": "Test"
+  }
+}
