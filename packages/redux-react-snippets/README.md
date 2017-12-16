@@ -17,11 +17,11 @@ There you have either the option to show the already installed snippets or insta
 ## Snippets
 
 ### import redux {Provider} (`imrp`)
-```
+```javascript
 import {Provider} from 'react-redux';$0
 ```
 ### new connected react component file (`ncrc`)
-```
+```javascript
 import PropTypes from 'prop-types';
 import React from 'react';
 import {connect} from 'react-redux';
@@ -41,7 +41,7 @@ ${1:componentName}.propTypes = {};
 export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(${1:componentName});
 ```
 ### new redux module actions file (`nrma`)
-```
+```javascript
 import {createActions} from 'redux-actions';
 
 export default createActions({
@@ -51,22 +51,22 @@ export default createActions({
 });
 ```
 ### redux action creator identity (`rmai`)
-```
+```javascript
 '${1:moduleName}/${2:ACTION_NAME}',
 ```
 ### redux action creator (`rma`)
-```
+```javascript
 ${1:ACTION_NAME}: (${2:value}) => ({$3}),$0
 ```
 ### redux action creator w/meta (`rmam`)
-```
+```javascript
 ${1:ACTION_NAME}: [
 	(${2:value}) => ({$3}),
 	(${2:value}) => ({$4})
 ],$0
 ```
 ### new redux module reducer file (`nrmr`)
-```
+```javascript
 import {handleActions} from 'redux-actions;
 import * as actions from './actions';
 
@@ -76,24 +76,24 @@ export default handleActions({
 }, defaultState);
 ```
 ### redux action reducer (`rmr`)
-```
+```javascript
 [actions.${1.actionName}]: (state, payload, meta) => ({
 	...state,
 	$2
 }),$0
 ```
 ### new redux selector file (`nrms`)
-```
+```javascript
 import {createSelector} from 'reselect';
 
 const getRoot = state => state$1;$0
 ```
 ### redux selector (`rms`)
-```
+```javascript
 const get${1:selectorName} = createSelector(${2:getRoot}, (${3:root}) => ({$4});$0
 ```
 ### new redux sagas files (`nrmsg`)
-```
+```javascript
 import {call, put, select, takeEvery} from 'redux-saga/effects';
 import * as actions from './actions';
 import * as selectors from './selectors';
@@ -103,25 +103,25 @@ export default [
 ];
 ```
 ### redux exported saga (`rmes`)
-```
+```javascript
 () => ${1:takeEvery}(actions.${2:actionName}, ${3:funcName}),$0
 ```
 ### generator function (`gfn`)
-```
+```javascript
 function* ${1:funcName}() {
 	$2
 }$0
 ```
 ### yield put (`yput`)
-```
+```javascript
 yield put(${1:actionName}($2);$0
 ```
 ### yield select (`yselect`)
-```
+```javascript
 yield select(selectors.${1:selectorName});$0
 ```
 ### root saga file (`roots`)
-```
+```javascript
 import {all, fork} from 'redux-saga/effects';
 
 const sagas = [];
@@ -133,7 +133,7 @@ const sagas = [];
 }
 ```
 ### root reducer file (`rootr`)
-```
+```javascript
 import {combineReducers} from 'redux';
 
 export default combineReducers({
@@ -141,7 +141,7 @@ export default combineReducers({
 }
 ```
 ### configure store file (`cstore`)
-```
+```javascript
 import createSagaMiddleware from 'redux-saga';
 import {createStore, applyMiddleware, compose} from 'redux';
 import reducer from './reducer';

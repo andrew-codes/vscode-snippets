@@ -2,6 +2,8 @@ const fs = require('fs');
 const htmlEncoder = require('htmlencode');
 const path = require('path');
 const snippets = require(path.join(process.cwd(), 'snippets', 'snippets.json'));
+const pkg = require(path.join(process.cwd(), 'package.json'));
+const language = pkg.language;
 
 const aboutContents = fs.readFileSync(path.join(process.cwd(), 'about.md'));
 
@@ -12,7 +14,7 @@ ${Object.keys(snippets)
   .map(
     key =>
       `### ${key} (\`${snippets[key].prefix}\`)
-\`\`\`
+\`\`\`${language}
 ${
         Array.isArray(snippets[key].body)
           ? snippets[key].body.join('\n')

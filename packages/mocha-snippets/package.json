@@ -28,5 +28,6 @@
         "path": "./snippets/snippets.json"
       }
     ]
-  }
+  },
+  "language": "javascript"
 }

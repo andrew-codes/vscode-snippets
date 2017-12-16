@@ -17,61 +17,61 @@ There you have either the option to show the already installed snippets or insta
 ## Snippets
 
 ### before (`ba`)
-```
+```javascript
 before(function() => {
 	$1
 });$0
 ```
 ### beforeEach (`be`)
-```
+```javascript
 beforeEach(function() => {
 	$1
 });$0
 ```
 ### After (`aa`)
-```
+```javascript
 after(function() => {
 	$1
 });$0
 ```
 ### afterEach (`ae`)
-```
+```javascript
 afterEach(function() => {
 	$1
 });$0
 ```
 ### suite (`ste`)
-```
+```javascript
 suite('$1', function() => {
 	$2
 });$0
 ```
 ### suiteSetup (`steup`)
-```
+```javascript
 suiteSetup(function() => {
 	$1
 });$0
 ```
 ### setup (`setup`)
-```
+```javascript
 setup(function() => {
 	$1
 });$0
 ```
 ### suiteTeardown (`stedown`)
-```
+```javascript
 suiteTeardown(function() => {
 	$1
 });$0
 ```
 ### teardown (`teardown`)
-```
+```javascript
 teardown(function() => {
 	$1
 });$0
 ```
 ### test (`tst`)
-```
+```javascript
 test('$1', function() => {
 	$2
 });
