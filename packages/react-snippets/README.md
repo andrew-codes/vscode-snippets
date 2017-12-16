@@ -13,8 +13,6 @@ There you have either the option to show the already installed snippets or insta
 * TypeScript (.ts)
 * JavaScript React (.jsx)
 * TypeScript React (.tsx)
-* JSX after installing the [corresponding extension](https://marketplace.visualstudio.com/items?itemName=TwentyChung.jsx)
-
 
 ## Snippets
 
