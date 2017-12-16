@@ -284,7 +284,7 @@ C => {
 	return class extends Component {
 		constructor(...rest) {
 			super(rest);
-	}
+		}
 
 		getChildContext() {
 			return {
