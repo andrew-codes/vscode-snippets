@@ -1,7 +1,7 @@
 {
-  "name": "js-testing-snippets",
-  "displayName": "Mocha/Jest Compatible Snippets",
-  "description": "Mocha/Jest compatible snippets",
+  "name": "mocha-snippets",
+  "displayName": "Mocha Snippets",
+  "description": "Mocha snippets",
   "version": "0.0.1",
   "author": "Andrew Smith <andrew@andrew.codes>",
   "publisher": "andrew-codes",

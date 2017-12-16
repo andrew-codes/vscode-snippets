@@ -1,6 +1,6 @@
-# VS Code JS Testing Snippets
+# VS Code Mocha Snippets
 
-This extension contains code snippets for testing JavaScript used by Andrew Smith.. Compatible with [Mocha](https://mochajs.org/) and [Jest](https://facebook.github.io/jest).
+This extension contains [Mocha](https://mochajs.org/) code snippets used by Andrew Smith.
 
 ## Installation
 
@@ -27,7 +27,7 @@ There you have either the option to show the already installed snippets or insta
 </thead>
 <tbody>
 <tr>
-        <td>before</td>
+        <td>ba</td>
         <td style="width: 30%;">Testing Before</td>
         <td><code><pre>before(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
       </tr><tr>
@@ -35,7 +35,7 @@ There you have either the option to show the already installed snippets or insta
         <td style="width: 30%;">Testing Before Each</td>
         <td><code><pre>beforeEach(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
       </tr><tr>
-        <td>after</td>
+        <td>aa</td>
         <td style="width: 30%;">Testing After</td>
         <td><code><pre>after(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
       </tr><tr>
@@ -46,10 +46,6 @@ There you have either the option to show the already installed snippets or insta
         <td>ste</td>
         <td style="width: 30%;">Testing Suite</td>
         <td><code><pre>suite(&#39;$1&#39;, function() =&gt; {&#10;&#9;$2&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>des</td>
-        <td style="width: 30%;">Testing Describe</td>
-        <td><code><pre>describe(&#39;$1&#39;, function() =&gt; {&#10;&#9;$2&#10;});$0</pre></code></td>
       </tr><tr>
         <td>steup</td>
         <td style="width: 30%;">Testing Suite Setup</td>

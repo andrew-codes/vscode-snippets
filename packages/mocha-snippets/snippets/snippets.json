@@ -1,6 +1,6 @@
 {
   "Testing Before": {
-    "prefix": "before",
+    "prefix": "ba",
     "body": ["before(function() => {", "\t$1", "});$0"],
     "description": "Before "
   },
@@ -10,7 +10,7 @@
     "description": "Before Each"
   },
   "Testing After": {
-    "prefix": "after",
+    "prefix": "aa",
     "body": ["after(function() => {", "\t$1", "});$0"],
     "description": "After"
   },
@@ -23,11 +23,6 @@
     "prefix": "ste",
     "body": ["suite('$1', function() => {", "\t$2", "});$0"],
     "description": "Suite"
-  },
-  "Testing Describe": {
-    "prefix": "des",
-    "body": ["describe('$1', function() => {", "\t$2", "});$0"],
-    "description": "Describe"
   },
   "Testing Suite Setup": {
     "prefix": "steup",

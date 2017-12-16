@@ -1,6 +1,6 @@
-# VS Code JS Testing Snippets
+# VS Code Mocha Snippets
 
-This extension contains code snippets for testing JavaScript used by Andrew Smith.. Compatible with [Mocha](https://mochajs.org/) and [Jest](https://facebook.github.io/jest).
+This extension contains [Mocha](https://mochajs.org/) code snippets used by Andrew Smith.
 
 ## Installation
 
