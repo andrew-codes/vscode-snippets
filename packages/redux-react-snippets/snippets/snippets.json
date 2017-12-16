@@ -35,7 +35,7 @@
   "new redux module reducer file": {
     "prefix": "nrmr",
     "body":
-      "import {handleActions} from 'redux-actions;\nimport * as actions from './actions';\n\nconst defaultState = {};\nexport default handleActions({\n\t$0\n}, defaultState);",
+      "import {handleActions} from 'redux-actions';\nimport * as actions from './actions';\n\nconst defaultState = {};\nexport default handleActions({\n\t$0\n}, defaultState);",
     "description": "Module reducer file"
   },
   "redux action reducer": {

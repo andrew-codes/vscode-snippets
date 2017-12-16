@@ -67,7 +67,7 @@ ${1:ACTION_NAME}: [
 ```
 ### new redux module reducer file (`nrmr`)
 ```javascript
-import {handleActions} from 'redux-actions;
+import {handleActions} from 'redux-actions';
 import * as actions from './actions';
 
 const defaultState = {};
