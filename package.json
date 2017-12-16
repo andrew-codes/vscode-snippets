@@ -3,16 +3,14 @@
   "version": "0.0.1",
   "description": "Collection of snippets broken into install-able extensions.",
   "scripts": {
-    "start": "nps"
+    "start": "nps",
+    "publish": "nps start publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andrew-codes/vscode-snippets.git"
   },
-  "keywords": [
-    "snippets",
-    "vsce"
-  ],
+  "keywords": ["snippets", "vsce"],
   "author": "Andrew Smith <andrew@andrew.codes>",
   "license": "MIT",
   "bugs": {
@@ -23,6 +21,7 @@
     "eslint": "^4.13.1",
     "htmlencode": "0.0.4",
     "lerna": "^2.5.1",
-    "nps": "^5.7.1"
+    "nps": "^5.7.1",
+    "vsce": "^1.35.0"
   }
 }
