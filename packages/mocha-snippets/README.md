@@ -16,56 +16,63 @@ There you have either the option to show the already installed snippets or insta
 
 ## Snippets
 
-<table>
-<thead>
-  <tr>
-    <td>Trigger</td>
-    <td>Name</td>
-    <td>Notes</td>
-    <td>Code</td>
-  </tr>
-</thead>
-<tbody>
-<tr>
-        <td>ba</td>
-        <td style="width: 30%;">before</td>
-        <td><code><pre>before(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>be</td>
-        <td style="width: 30%;">beforeEach</td>
-        <td><code><pre>beforeEach(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>aa</td>
-        <td style="width: 30%;">After</td>
-        <td><code><pre>after(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>ae</td>
-        <td style="width: 30%;">afterEach</td>
-        <td><code><pre>afterEach(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>ste</td>
-        <td style="width: 30%;">suite</td>
-        <td><code><pre>suite(&#39;$1&#39;, function() =&gt; {&#10;&#9;$2&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>steup</td>
-        <td style="width: 30%;">suiteSetup</td>
-        <td><code><pre>suiteSetup(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>setup</td>
-        <td style="width: 30%;">setup</td>
-        <td><code><pre>setup(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>stedown</td>
-        <td style="width: 30%;">suiteTeardown</td>
-        <td><code><pre>suiteTeardown(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>teardown</td>
-        <td style="width: 30%;">teardown</td>
-        <td><code><pre>teardown(function() =&gt; {&#10;&#9;$1&#10;});$0</pre></code></td>
-      </tr><tr>
-        <td>tst</td>
-        <td style="width: 30%;">test</td>
-        <td><code><pre>test(&#39;$1&#39;, function() =&gt; {&#10;&#9;$2&#10;});</pre></code></td>
-      </tr>
-</tbody>
-</table>
+### before (`ba`)
+```
+before(function() => {
+	$1
+});$0
+```
+### beforeEach (`be`)
+```
+beforeEach(function() => {
+	$1
+});$0
+```
+### After (`aa`)
+```
+after(function() => {
+	$1
+});$0
+```
+### afterEach (`ae`)
+```
+afterEach(function() => {
+	$1
+});$0
+```
+### suite (`ste`)
+```
+suite('$1', function() => {
+	$2
+});$0
+```
+### suiteSetup (`steup`)
+```
+suiteSetup(function() => {
+	$1
+});$0
+```
+### setup (`setup`)
+```
+setup(function() => {
+	$1
+});$0
+```
+### suiteTeardown (`stedown`)
+```
+suiteTeardown(function() => {
+	$1
+});$0
+```
+### teardown (`teardown`)
+```
+teardown(function() => {
+	$1
+});$0
+```
+### test (`tst`)
+```
+test('$1', function() => {
+	$2
+});
+```
