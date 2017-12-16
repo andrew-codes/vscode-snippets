@@ -106,78 +106,54 @@ constructor(props, context, ...rest) {
 ```
 ### componentWillMount (`cwm`)
 ```javascript
-componentWillMount() {
-	$0
-}
+componentWillMount() {$1}$0
 ```
 ### componentDidMount (`cdm`)
 ```javascript
-componentDidMount() {
-	$0
-}
+componentDidMount() {$1}$0
 ```
 ### componentWillReceiveProps (`cwr`)
 ```javascript
-componentWillReceiveProps(nextProps) {
-	$0
-}
+componentWillReceiveProps(nextProps) {$1}$0
 ```
 ### shouldComponentUpdate (`scu`)
 ```javascript
-shouldComponentUpdate(nextProps, nextState) {
-	$0
-}
+shouldComponentUpdate(nextProps, nextState) {$1}$0
 ```
 ### componentWillUpdate (`cwup`)
 ```javascript
-componentWillUpdate(nextProps, nextState) {
-	$0
-}
+componentWillUpdate(nextProps, nextState) {$1}$0
 ```
 ### componentDidUpdate (`cdup`)
 ```javascript
-componentDidUpdate(prevProps, prevState) {
-	$0
-}
+componentDidUpdate(prevProps, prevState) {$1}$0
 ```
 ### componentWillUnmount (`cwum`)
 ```javascript
-componentWillUnmount() {
-	$0
-}
+componentWillUnmount() {$1}$0
 ```
 ### bound component class method (`ccm`)
 ```javascript
-${1:methodName} = () => {
-	$0
-};
+${1:methodName} = () => ${1:{}};$0
 ```
 ### set state (`sst`)
 ```javascript
-this.setState({
-	$1
-});
+this.setState({$1});
 $0
 ```
 ### set state w/ function (`ssf`)
 ```javascript
-this.setState((state, props) => ({
-	$1
-}));
+this.setState((state, props) => ({$1}));
 $0
 ```
 ### destructure class props (`cdp`)
 ```javascript
-const {
-	$1
-} = this.props;
+const {$1} = this.props;
 $0
 ```
 ### destructure class state (`cds`)
 ```javascript
-const {
-	$1
-} = this.state;
+const {$1} = this.state;
 $0
 ```
 ### bind method to class (`cbnd`)
@@ -187,130 +163,120 @@ $0
 ```
 ### default props (`rdp`)
 ```javascript
-$1.defaultProps = {
-	$2
-};
+$1.defaultProps = {$2};
 $0
 ```
 ### propType array (`pta`)
 ```javascript
-PropTypes.array,
+PropTypes.array,$0
 ```
 ### propType array required (`ptar`)
 ```javascript
-PropTypes.array.isRequired,
+PropTypes.array.isRequired,$0
 ```
 ### propType bool (`ptb`)
 ```javascript
-PropTypes.bool,
+PropTypes.bool,$0
 ```
 ### propType bool required (`ptbr`)
 ```javascript
-PropTypes.bool.isRequired,
+PropTypes.bool.isRequired,$0
 ```
 ### propType func (`ptf`)
 ```javascript
-PropTypes.func,
+PropTypes.func,$0
 ```
 ### propType func required (`ptfr`)
 ```javascript
-PropTypes.func.isRequired,
+PropTypes.func.isRequired,$0
 ```
 ### propType number (`ptn`)
 ```javascript
-PropTypes.number,
+PropTypes.number,$0
 ```
 ### propType number required (`ptnr`)
 ```javascript
-PropTypes.number.isRequired,
+PropTypes.number.isRequired,$0
 ```
 ### propType object (`pto`)
 ```javascript
-PropTypes.object,
+PropTypes.object,$0
 ```
 ### propType object required (`ptor`)
 ```javascript
-PropTypes.object.isRequired,
+PropTypes.object.isRequired,$0
 ```
 ### propType string (`pts`)
 ```javascript
-PropTypes.string,
+PropTypes.string,$0
 ```
 ### propTypes string required (`ptsr`)
 ```javascript
-PropTypes.string.isRequired,
+PropTypes.string.isRequired,$0
 ```
 ### propType node (`ptnd`)
 ```javascript
-PropTypes.node,
+PropTypes.node,$0
 ```
 ### propType node required (`ptndr`)
 ```javascript
-PropTypes.node.isRequired,
+PropTypes.node.isRequired,$0
 ```
 ### propType element (`ptel`)
 ```javascript
-PropTypes.element,
+PropTypes.element,$0
 ```
 ### propType element required (`ptelr`)
 ```javascript
-PropTypes.element.isRequired,
+PropTypes.element.isRequired,$0
 ```
 ### propType instanceOf (`pti`)
 ```javascript
-PropTypes.instanceOf($0),
+PropTypes.instanceOf($1),$0
 ```
 ### propType instanceOf required (`ptir`)
 ```javascript
-PropTypes.instanceOf($0).isRequired,
+PropTypes.instanceOf($1).isRequired,$0
 ```
 ### propType enum (`pte`)
 ```javascript
-PropTypes.oneOf(['$0']),
+PropTypes.oneOf([$1]),$0
 ```
 ### propType enum required (`pter`)
 ```javascript
-PropTypes.oneOf(['$0']).isRequired,
+PropTypes.oneOf([$1]).isRequired,$0
 ```
 ### propType one of type (`ptot`)
 ```javascript
-PropTypes.oneOfType([
-	$0
-]),
+PropTypes.oneOfType([$1]),$0
 ```
 ### propType one of type required (`ptotr`)
 ```javascript
-PropTypes.oneOfType([
-	$0
-]).isRequired,
+PropTypes.oneOfType([$1]).isRequired,$0
 ```
 ### propType array of (`ptao`)
 ```javascript
-PropTypes.arrayOf($0),
+PropTypes.arrayOf($1),$0
 ```
 ### propType array of required (`ptaor`)
 ```javascript
-PropTypes.arrayOf($0).isRequired,
+PropTypes.arrayOf($1).isRequired,$0
 ```
 ### propType object of (`ptoo`)
 ```javascript
-PropTypes.objectOf($0),
+PropTypes.objectOf($1),$0
 ```
 ### propType object of required (`ptoor`)
 ```javascript
-PropTypes.objectOf($0).isRequired,
+PropTypes.objectOf($1).isRequired,$0
 ```
 ### propType shape (`ptsh`)
 ```javascript
-PropTypes.shape({
-	$0
-}),
+PropTypes.shape({$0}),
 ```
 ### propType shape required (`ptshr`)
 ```javascript
-PropTypes.shape({
-	$0
-}).isRequired,
+PropTypes.shape({$1}).isRequired,$0
 ```
 ### higher order component (`hoc`)
 ```javascript
@@ -336,5 +302,5 @@ C => {
 ref={(el) => {
 	this.$1 = el;
 }}
-
+$0
 ```
