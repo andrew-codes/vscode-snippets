@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/andrew-codes/vscode-snippets.git"
   },
-  "keywords": ["snippets", "vsce"],
+  "keywords": [
+    "snippets",
+    "vsce"
+  ],
   "author": "Andrew Smith <andrew@andrew.codes>",
   "license": "MIT",
   "bugs": {
@@ -22,6 +25,6 @@
     "htmlencode": "0.0.4",
     "lerna": "^2.5.1",
     "nps": "^5.7.1",
-    "vsce": "^1.35.0"
+    "vsce": "^1.37.1"
   }
 }
