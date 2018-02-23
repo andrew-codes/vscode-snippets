@@ -2,13 +2,15 @@
   "name": "mocha-snippets",
   "displayName": "Mocha Snippets",
   "description": "Mocha snippets",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Andrew Smith <andrew@andrew.codes>",
   "publisher": "andrew-codes",
   "engines": {
     "vscode": "^1.19.0"
   },
-  "categories": ["Snippets"],
+  "categories": [
+    "Snippets"
+  ],
   "contributes": {
     "snippets": [
       {
