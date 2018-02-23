@@ -19,11 +19,6 @@
     "body": ["afterEach(() => {", "\t$1", "});$0"],
     "description": "After each"
   },
-  "suite": {
-    "prefix": "ste",
-    "body": ["suite('$1', () => {", "\t$2", "});$0"],
-    "description": "Suite"
-  },
   "test": {
     "prefix": "tst",
     "body": ["test('$1', () => {", "\t$2", "});"],

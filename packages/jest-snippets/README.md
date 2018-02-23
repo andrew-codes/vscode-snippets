@@ -40,12 +40,6 @@ afterEach(() => {
 	$1
 });$0
 ```
-### suite (`ste`)
-```javascript
-suite('$1', () => {
-	$2
-});$0
-```
 ### test (`tst`)
 ```javascript
 test('$1', () => {
