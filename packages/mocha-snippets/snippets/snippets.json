@@ -1,52 +1,52 @@
 {
   "before": {
     "prefix": "ba",
-    "body": ["before(function() => {", "\t$1", "});$0"],
+    "body": ["before(() => {", "\t$1", "});$0"],
     "description": "Before "
   },
   "beforeEach": {
     "prefix": "be",
-    "body": ["beforeEach(function() => {", "\t$1", "});$0"],
+    "body": ["beforeEach(() => {", "\t$1", "});$0"],
     "description": "Before each"
   },
   "After": {
     "prefix": "aa",
-    "body": ["after(function() => {", "\t$1", "});$0"],
+    "body": ["after(() => {", "\t$1", "});$0"],
     "description": "After"
   },
   "afterEach": {
     "prefix": "ae",
-    "body": ["afterEach(function() => {", "\t$1", "});$0"],
+    "body": ["afterEach(() => {", "\t$1", "});$0"],
     "description": "After each"
   },
   "suite": {
     "prefix": "ste",
-    "body": ["suite('$1', function() => {", "\t$2", "});$0"],
+    "body": ["suite('$1', () => {", "\t$2", "});$0"],
     "description": "Suite"
   },
   "suiteSetup": {
     "prefix": "steup",
-    "body": ["suiteSetup(function() => {", "\t$1", "});$0"],
+    "body": ["suiteSetup(() => {", "\t$1", "});$0"],
     "description": "Suite setup"
   },
   "setup": {
     "prefix": "setup",
-    "body": ["setup(function() => {", "\t$1", "});$0"],
+    "body": ["setup(() => {", "\t$1", "});$0"],
     "description": "Setup"
   },
   "suiteTeardown": {
     "prefix": "stedown",
-    "body": ["suiteTeardown(function() => {", "\t$1", "});$0"],
+    "body": ["suiteTeardown(() => {", "\t$1", "});$0"],
     "description": "Suite teardown"
   },
   "teardown": {
     "prefix": "teardown",
-    "body": ["teardown(function() => {", "\t$1", "});$0"],
+    "body": ["teardown(() => {", "\t$1", "});$0"],
     "description": "Teardown"
   },
   "test": {
     "prefix": "tst",
-    "body": ["test('$1', function() => {", "\t$2", "});"],
+    "body": ["test('$1', () => {", "\t$2", "});"],
     "description": "Test"
   }
 }
