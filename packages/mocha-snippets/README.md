@@ -76,3 +76,21 @@ test('$1', () => {
 	$2
 });
 ```
+### it (`it`)
+```javascript
+it('$1', () => {
+	$2
+}$0
+```
+### describe (`dsc`)
+```javascript
+describe('$1', () => {
+	$2
+}$0
+```
+### context (`ctx`)
+```javascript
+context('$1', () => {
+	$2
+}$0
+```
