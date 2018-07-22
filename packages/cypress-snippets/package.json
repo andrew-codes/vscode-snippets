@@ -2,7 +2,7 @@
   "name": "cypress-snippets",
   "displayName": "Cypress Snippets",
   "description": "Cypress snippets",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Andrew Smith <andrew@andrew.codes> (http://andrew.codes)",
   "publisher": "andrew-codes",
   "engines": {
