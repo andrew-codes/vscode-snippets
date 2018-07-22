@@ -1,0 +1,35 @@
+{
+  "name": "cypress-snippets",
+  "displayName": "Cypress Snippets",
+  "description": "Cypress snippets",
+  "version": "1.0.0",
+  "author": "Andrew Smith <andrew@andrew.codes>",
+  "publisher": "andrew-codes",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "language": "javascript"
+}

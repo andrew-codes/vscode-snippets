@@ -1,0 +1,126 @@
+{
+  "beforeEach": {
+    "prefix": "be",
+    "body": [
+      "beforeEach(() => {",
+      "\t$1",
+      "});",
+      "",
+      "$0"
+    ],
+    "description": "Before each"
+  },
+  "context": {
+    "prefix": "ctx",
+    "body": [
+      "ctx('$1', () => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "Context"
+  },
+  "it": {
+    "prefix": "it",
+    "body": [
+      "it('$1', () => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "It"
+  },
+  "visit": {
+    "prefix": "cyv",
+    "body": [
+      "cy.visit('$1');$0"
+    ],
+    "description": "Cypress visit"
+  },
+  "get": {
+    "prefix": "cyget",
+    "body": [
+      "cy.get('$1')${0:;}"
+    ],
+    "description": "Cypress get"
+  },
+  "find": {
+    "prefix": "cyf",
+    "body": [
+      "find('$1')${0:;}"
+    ],
+    "description": "Cypress find"
+  },
+  "first": {
+    "prefix": "cy1",
+    "body": [
+      "first()${0:;}"
+    ],
+    "description": "Cypress find"
+  },
+  "type": {
+    "prefix": "cyt",
+    "body": [
+      "type('$1')${0:;}"
+    ],
+    "description": "Cypress type"
+  },
+  "contains": {
+    "prefix": "cycon",
+    "body": [
+      "contains(${2:'$3', }'$1')${0:;}"
+    ],
+    "description": "Cypress contains"
+  },
+  "clk": {
+    "prefix": "cyc",
+    "body": [
+      "\nclick()${0:;}"
+    ],
+    "description": "Cypress click"
+  },
+  "server": {
+    "prefix": "cyserver",
+    "body": [
+      "cy.server();$0"
+    ],
+    "description": "Cypress server"
+  },
+  "route": {
+    "prefix": "cyroute",
+    "body": [
+      "cy.route(${2:'$3', }$1).as('${4}');$0"
+    ],
+    "description": "Cypress route"
+  },
+  "wait": {
+    "prefix": "cyw",
+    "body": [
+      "cy.wait(${1:'@${2}'});$0"
+    ],
+    "description": "Cypress wait"
+  },
+  "viewport": {
+    "prefix": "cyvp",
+    "body": [
+      "cy.viewport($1, $2);$0"
+    ],
+    "description": "Cypress viewport"
+  },
+  "request": {
+    "prefix": "cyreq",
+    "body": [
+      "cy.request({",
+      "\tmethod: '$1',",
+      "\turl: '$2',",
+      "\theaders: { 'Accept-Language': 'en-us', },",
+      "});$0"
+    ],
+    "description": "Cypress request"
+  },
+  "add command": {
+    "prefix": "cyadd",
+    "body": [
+      "Cypress.Commands.add('$1', ${3: { previous: '$4' \\} , }$2);$0"
+    ],
+    "description": "Cypress add custom command"
+  }
+}
