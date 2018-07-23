@@ -2,7 +2,7 @@
   "name": "redux-react-snippets",
   "displayName": "Redux with React Snippets",
   "description": "Redux snippets when used with React",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Andrew Smith <andrew@andrew.codes> (http://andrew.codes)",
   "publisher": "andrew-codes",
   "engines": {
