@@ -3,16 +3,23 @@
   "version": "0.0.1",
   "description": "Collection of snippets broken into install-able extensions.",
   "scripts": {
-    "start": "nps",
-    "publish": "nps start publish"
+    "readme": "lerna exec 'node ../../scripts/readme.js'",
+    "prepublishOnly": "yarn readme",
+    "publish": "lerna exec 'vsce publish'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andrew-codes/vscode-snippets.git"
   },
+  "engines": {
+    "node": "^10.15.1",
+    "yarn": "^1.3.2"
+  },
   "keywords": [
     "snippets",
-    "vsce"
+    "vsce",
+    "vs code",
+    "visaul studio code"
   ],
   "author": "Andrew Smith <andrew@andrew.codes>",
   "license": "MIT",
@@ -21,10 +28,9 @@
   },
   "homepage": "https://github.com/andrew-codes/vscode-snippets#readme",
   "devDependencies": {
-    "eslint": "^4.13.1",
+    "eslint": "^5.15.0",
     "htmlencode": "0.0.4",
-    "lerna": "^2.5.1",
-    "nps": "^5.7.1",
-    "vsce": "^1.37.1"
+    "lerna": "^3.13.1",
+    "vsce": "^1.57.1"
   }
 }
