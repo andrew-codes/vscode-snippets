@@ -18,7 +18,7 @@ There you have either the option to show the already installed snippets or insta
 
 ### context (`cyctx`)
 ```javascript
-ctx('$1', () => {
+context('$1', () => {
 	$0
 });
 ```

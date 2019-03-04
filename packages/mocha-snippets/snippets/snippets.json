@@ -46,7 +46,7 @@
   },
   "describe": {
     "prefix": "dsc",
-    "body": ["describe('$1', () => {", "\t$2", "}$0"],
-    "describe": "Describe"
+    "body": ["describe('$1', () => {", "\t$2", "});$0"],
+    "description": "Describe"
   }
 }

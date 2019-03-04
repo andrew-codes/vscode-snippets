@@ -1,7 +1,7 @@
 {
   "context": {
     "prefix": "cyctx",
-    "body": ["ctx('$1', () => {", "\t$0", "});"],
+    "body": ["context('$1', () => {", "\t$0", "});"],
     "description": "Context"
   },
   "visit": {
