@@ -4,11 +4,6 @@
     "body": ["beforeAll(() => {", "\t$1", "});$0"],
     "description": "Before all"
   },
-  "beforeEach": {
-    "prefix": "be",
-    "body": ["beforeEach(() => {", "\t$1", "});$0"],
-    "description": "Before each"
-  },
   "afterAll": {
     "prefix": "aa",
     "body": ["after(() => {", "\t$1", "});$0"],

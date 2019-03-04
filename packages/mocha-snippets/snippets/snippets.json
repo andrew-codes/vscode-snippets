@@ -4,12 +4,7 @@
     "body": ["before(() => {", "\t$1", "});$0"],
     "description": "Before all"
   },
-  "beforeEach": {
-    "prefix": "be",
-    "body": ["beforeEach(() => {", "\t$1", "});$0"],
-    "description": "Before each"
-  },
-  "After": {
+  "after": {
     "prefix": "aa",
     "body": ["after(() => {", "\t$1", "});$0"],
     "description": "After"
@@ -49,19 +44,9 @@
     "body": ["test('$1', () => {", "\t$2", "});"],
     "description": "Test"
   },
-  "it": {
-    "prefix": "it",
-    "body": ["it('$1', () => {", "\t$2", "}$0"],
-    "describe": "It"
-  },
   "describe": {
     "prefix": "dsc",
     "body": ["describe('$1', () => {", "\t$2", "}$0"],
     "describe": "Describe"
-  },
-  "context": {
-    "prefix": "ctx",
-    "body": ["context('$1', () => {", "\t$2", "}$0"],
-    "describe": "Context"
   }
 }

@@ -1,18 +1,8 @@
 {
-  "beforeEach": {
-    "prefix": "be",
-    "body": ["beforeEach(() => {", "\t$1", "});", "", "$0"],
-    "description": "Before each"
-  },
   "context": {
-    "prefix": "ctx",
+    "prefix": "cyctx",
     "body": ["ctx('$1', () => {", "\t$0", "});"],
     "description": "Context"
-  },
-  "it": {
-    "prefix": "it",
-    "body": ["it('$1', () => {", "\t$0", "});"],
-    "description": "It"
   },
   "visit": {
     "prefix": "cyv",
@@ -32,7 +22,7 @@
   "first": {
     "prefix": "cy1",
     "body": ["first()${0:;}"],
-    "description": "Cypress find"
+    "description": "Cypress first"
   },
   "type": {
     "prefix": "cyt",

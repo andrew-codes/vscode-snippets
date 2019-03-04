@@ -1,6 +1,6 @@
-# VS Code Jest Snippets
+# VS Code Cypress Snippets
 
-This extension contains [Jest](https://facebook.io/jest/) code snippets used by Andrew Smith.
+This extension contains [Cypress](https://cypress.io/) code snippets used by Andrew Smith. Work in Progress.
 
 ## Installation
 
@@ -16,27 +16,17 @@ There you have either the option to show the already installed snippets or insta
 
 ## Snippets
 
-### beforeAll (`ba`)
+### beforeEach (`be`)
 ```javascript
-beforeAll(() => {
+beforeEach(() => {
 	$1
-});$0
+});
+
+$0
 ```
-### afterAll (`aa`)
+### it (`it`)
 ```javascript
-after(() => {
-	$1
-});$0
-```
-### afterEach (`ae`)
-```javascript
-afterEach(() => {
-	$1
-});$0
-```
-### test (`tst`)
-```javascript
-test('$1', () => {
-	$2
+it('$1', () => {
+	$0
 });
 ```

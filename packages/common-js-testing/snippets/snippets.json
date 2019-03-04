@@ -1,0 +1,12 @@
+{
+  "beforeEach": {
+    "prefix": "be",
+    "body": ["beforeEach(() => {", "\t$1", "});", "", "$0"],
+    "description": "Before each block"
+  },
+  "it": {
+    "prefix": "it",
+    "body": ["it('$1', () => {", "\t$0", "});"],
+    "description": "It test block"
+  }
+}
