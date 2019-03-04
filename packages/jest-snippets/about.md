@@ -9,7 +9,7 @@ There you have either the option to show the already installed snippets or insta
 
 ## Supported Languages (file extensions)
 
-* JavaScript (.js)
-* TypeScript (.ts)
-* JavaScript React (.jsx)
-* TypeScript React (.tsx)
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)

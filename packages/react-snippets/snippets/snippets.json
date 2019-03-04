@@ -16,84 +16,69 @@
   },
   "all inclusive functional component": {
     "prefix": "nrc",
-    "body":
-      "import PropTypes from 'prop-types';\nimport React from 'react';\n\nconst ${1:componentName} = ({}) => (\n\t${0:<div></div>}\n);\n\n${1:componentName}.propTypes = {};\n\nexport default ${1:componentName};",
-    "description":
-      "Creates a new stateless functional component; imports, definition, propTypes, and export."
+    "body": "import PropTypes from 'prop-types';\nimport React from 'react';\n\nconst ${1:componentName} = ({}) => (\n\t${0:<div></div>}\n);\n\n${1:componentName}.propTypes = {};\n\nexport default ${1:componentName};",
+    "description": "Creates a new stateless functional component; imports, definition, propTypes, and export."
   },
   "all inclusive class component": {
     "prefix": "nrcc",
-    "body":
-      "import PropTypes from 'prop-types';\nimport React, { Component } from 'react';\n\nclass ${1:componentName} extends Component {\n\tconstructor(props, ...rest) {\n\t\tsuper(props, ...rest);\n\t\tthis.state = {};\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t${0:<div></div>}\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {};\n\nexport default ${1:componentName};",
-    "description":
-      "Creates a component class; imports, definition, propTypes, and export."
+    "body": "import PropTypes from 'prop-types';\nimport React, { Component } from 'react';\n\nclass ${1:componentName} extends Component {\n\tconstructor(props, ...rest) {\n\t\tsuper(props, ...rest);\n\t\tthis.state = {};\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t${0:<div></div>}\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {};\n\nexport default ${1:componentName};",
+    "description": "Creates a component class; imports, definition, propTypes, and export."
   },
   "just functional component": {
     "prefix": "rc",
-    "body":
-      "const ${1:componentName} = ({}) => (\n\t${2:<div></div>}\n);\n\n${1:componentName}.propTypes = {};\n$0",
+    "body": "const ${1:componentName} = ({}) => (\n\t${2:<div></div>}\n);\n\n${1:componentName}.propTypes = {};\n$0",
     "description": "Stand-along functional component"
   },
   "just class Component": {
     "name": "class component",
     "prefix": "rcc",
-    "body":
-      "class ${1:componentName} extends Component {\n\tconstructor(props, ...rest) {\n\t\tsuper(props, ...rest);\n\t\tthis.state = {};\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {};\n$0",
+    "body": "class ${1:componentName} extends Component {\n\tconstructor(props, ...rest) {\n\t\tsuper(props, ...rest);\n\t\tthis.state = {};\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {};\n$0",
     "description": "Stand-alone component class"
   },
   "default component constructor": {
     "prefix": "ccon",
-    "body":
-      "constructor(props, ...rest) {\n\tsuper(props, ...rest);\n\t$1\n}$0",
+    "body": "constructor(props, ...rest) {\n\tsuper(props, ...rest);\n\t$1\n}$0",
     "description": "Component constructor with props."
   },
   "constructor; props and context": {
     "prefix": "cconc",
-    "body":
-      "constructor(props, context, ...rest) {\n\tsuper(props, context, ...rest);\n\t$1\n}$0",
+    "body": "constructor(props, context, ...rest) {\n\tsuper(props, context, ...rest);\n\t$1\n}$0",
     "description": "Component constructor with props and context."
   },
   "componentWillMount": {
     "prefix": "cwm",
     "body": "componentWillMount() {$1}$0",
-    "description":
-      "Invoked once, both on the client and server, immediately before the initial rendering occurs"
+    "description": "Invoked once, both on the client and server, immediately before the initial rendering occurs"
   },
   "componentDidMount": {
     "prefix": "cdm",
     "body": "componentDidMount() {$1}$0",
-    "description":
-      "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs."
+    "description": "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs."
   },
   "componentWillReceiveProps": {
     "prefix": "cwr",
     "body": "componentWillReceiveProps(nextProps) {$1}$0",
-    "description":
-      "Invoked when a component is receiving new props. This method is not called for the initial render."
+    "description": "Invoked when a component is receiving new props. This method is not called for the initial render."
   },
   "shouldComponentUpdate": {
     "prefix": "scu",
     "body": "shouldComponentUpdate(nextProps, nextState) {$1}$0",
-    "description":
-      "Invoked before rendering when new props or state are being received. "
+    "description": "Invoked before rendering when new props or state are being received. "
   },
   "componentWillUpdate": {
     "prefix": "cwup",
     "body": "componentWillUpdate(nextProps, nextState) {$1}$0",
-    "description":
-      "Invoked immediately before rendering when new props or state are being received."
+    "description": "Invoked immediately before rendering when new props or state are being received."
   },
   "componentDidUpdate": {
     "prefix": "cdup",
     "body": "componentDidUpdate(prevProps, prevState) {$1}$0",
-    "description":
-      "Invoked immediately after the component's updates are flushed to the DOM."
+    "description": "Invoked immediately after the component's updates are flushed to the DOM."
   },
   "componentWillUnmount": {
     "prefix": "cwum",
     "body": "componentWillUnmount() {$1}$0",
-    "description":
-      "Invoked immediately before a component is unmounted from the DOM."
+    "description": "Invoked immediately before a component is unmounted from the DOM."
   },
   "bound component class method": {
     "prefix": "ccm",
@@ -123,8 +108,7 @@
   "bind method to class": {
     "prefix": "cbnd",
     "body": "this.$1 = this.$1.bind(this);\n$0",
-    "description":
-      "Binds the this of a method. To be used inside a constructor."
+    "description": "Binds the this of a method. To be used inside a constructor."
   },
   "default props": {
     "prefix": "rdp",
@@ -194,14 +178,12 @@
   "propType node": {
     "prefix": "ptnd",
     "body": "PropTypes.node,$0",
-    "description":
-      "Anything that can be rendered: numbers, strings, elements or an array."
+    "description": "Anything that can be rendered: numbers, strings, elements or an array."
   },
   "propType node required": {
     "prefix": "ptndr",
     "body": "PropTypes.node.isRequired,$0",
-    "description":
-      "Anything that can be rendered: numbers, strings, elements or an array required."
+    "description": "Anything that can be rendered: numbers, strings, elements or an array required."
   },
   "propType element": {
     "prefix": "ptel",
@@ -226,14 +208,12 @@
   "propType enum": {
     "prefix": "pte",
     "body": "PropTypes.oneOf([$1]),$0",
-    "description":
-      "Prop type limited to specific values by treating it as an enum."
+    "description": "Prop type limited to specific values by treating it as an enum."
   },
   "propType enum required": {
     "prefix": "pter",
     "body": "PropTypes.oneOf([$1]).isRequired,$0",
-    "description":
-      "Prop type limited to specific values by treating it as an enum required."
+    "description": "Prop type limited to specific values by treating it as an enum required."
   },
   "propType one of type": {
     "prefix": "ptot",
@@ -277,8 +257,7 @@
   },
   "higher order component": {
     "prefix": "hoc",
-    "body":
-      "C => {\n\treturn class extends Component {\n\t\tconstructor(...rest) {\n\t\t\tsuper(rest);\n\t\t}\n\n\t\tgetChildContext() {\n\t\t\treturn {\n\t\t\t\t};\n\t\t}\n\n\t\trender() {\n\t\t\t$0return <C {...this.props} />;\n\t\t}\n\t};\n}",
+    "body": "C => {\n\treturn class extends Component {\n\t\tconstructor(...rest) {\n\t\t\tsuper(rest);\n\t\t}\n\n\t\tgetChildContext() {\n\t\t\treturn {\n\t\t\t\t};\n\t\t}\n\n\t\trender() {\n\t\t\t$0return <C {...this.props} />;\n\t\t}\n\t};\n}",
     "description": "basic higher order component function"
   },
   "ref": {

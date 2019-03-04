@@ -9,40 +9,53 @@ There you have either the option to show the already installed snippets or insta
 
 ## Supported Languages (file extensions)
 
-* JavaScript (.js)
-* TypeScript (.ts)
-* JavaScript React (.jsx)
-* TypeScript React (.tsx)
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)
 
 ## Snippets
 
 ### beforeAll (`ba`)
+
 ```javascript
 beforeAll(() => {
-	$1
-});$0
+  $1;
+});
+$0;
 ```
+
 ### beforeEach (`be`)
+
 ```javascript
 beforeEach(() => {
-	$1
-});$0
+  $1;
+});
+$0;
 ```
+
 ### afterAll (`aa`)
+
 ```javascript
 after(() => {
-	$1
-});$0
+  $1;
+});
+$0;
 ```
+
 ### afterEach (`ae`)
+
 ```javascript
 afterEach(() => {
-	$1
-});$0
+  $1;
+});
+$0;
 ```
+
 ### test (`tst`)
+
 ```javascript
-test('$1', () => {
-	$2
+test("$1", () => {
+  $2;
 });
 ```
