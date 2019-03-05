@@ -1,7 +1,7 @@
 {
   "name": "jest-snippets",
-  "displayName": "Jest Snippets",
-  "description": "Jest snippets",
+  "displayName": "Jest Matcher Snippets",
+  "description": "Snippets of jest matchers (toBe, toContain, etc.)",
   "version": "1.2.0",
   "author": "Andrew Smith <andrew@andrew.codes> (http://andrew.codes)",
   "publisher": "andrew-codes",

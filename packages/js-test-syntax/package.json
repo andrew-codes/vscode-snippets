@@ -1,7 +1,7 @@
 {
-  "name": "mocha-snippets",
-  "displayName": "Mocha Snippets",
-  "description": "Mocha snippets",
+  "name": "js-test-syntax",
+  "displayName": "Common JS Test Syntax",
+  "description": "Commonly used test syntax blocks; used by mocha, jest and cypress (test, suite, context, describe, it, etc.)",
   "version": "1.2.0",
   "author": "Andrew Smith <andrew@andrew.codes> (http://andrew.codes)",
   "publisher": "andrew-codes",
