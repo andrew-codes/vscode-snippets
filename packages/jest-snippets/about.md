@@ -1,6 +1,8 @@
 # VS Code Jest Snippets
 
-This extension contains [Jest](https://facebook.io/jest/) code snippets used by Andrew Smith.
+> coming soon!
+
+This extension contains [Jest](https://facebook.io/jest/) code snippets used by [Andrew Smith](https://andrew.codes).
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # VS Code Cypress Snippets
 
-This extension contains [Cypress](https://cypress.io/) code snippets used by Andrew Smith. Work in Progress.
+This extension contains [Cypress](https://cypress.io/) code snippets used by [Andrew Smith](https://andrew.codes). Work in Progress.
 
 ## Installation
 

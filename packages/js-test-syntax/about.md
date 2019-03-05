@@ -1,6 +1,6 @@
-# VS Code Mocha Snippets
+# VS JavaScript Test Syntax Snippets
 
-This extension contains [Mocha](https://mochajs.org/) code snippets used by Andrew Smith.
+This extension contains common JavaScript testing syntax snippets used by [Andrew Smith](https://andrew.codes).
 
 ## Installation
 

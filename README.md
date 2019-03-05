@@ -1,4 +1,4 @@
-# Snippets Used by Andrew Smith
+# Snippets Used by [Andrew Smith](https://andrew.codes)
 
 - [react snippets](packages/react-snippets)
 - [redux with react snippets](packages/redux-react-snippets)
