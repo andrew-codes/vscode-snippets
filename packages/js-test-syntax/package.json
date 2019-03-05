@@ -11,6 +11,13 @@
   "categories": [
     "Snippets"
   ],
+  "keywords": [
+    "jest",
+    "mocha",
+    "cypress",
+    "test",
+    "javascript"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andrew-codes/vscode-snippets.git"
