@@ -29,7 +29,6 @@
   "homepage": "https://github.com/andrew-codes/vscode-snippets#readme",
   "devDependencies": {
     "eslint": "^5.15.0",
-    "htmlencode": "0.0.4",
     "lerna": "^3.13.1",
     "vsce": "^1.57.1"
   }
