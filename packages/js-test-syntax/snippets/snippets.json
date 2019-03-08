@@ -1,18 +1,38 @@
 {
   "before": {
-    "prefix": "ba",
+    "prefix": "tstba",
     "body": ["before(() => {", "\t$1", "});$0"],
     "description": "Before all"
   },
+  "beforeEach": {
+    "prefix": "tstbe",
+    "body": ["beforeEach(() => {", "\t$1", "});", "", "$0"],
+    "description": "Before each block"
+  },
   "after": {
-    "prefix": "aa",
+    "prefix": "tstaa",
     "body": ["after(() => {", "\t$1", "});$0"],
-    "description": "After"
+    "description": "After all"
   },
   "afterEach": {
-    "prefix": "ae",
+    "prefix": "tstae",
     "body": ["afterEach(() => {", "\t$1", "});$0"],
     "description": "After each"
+  },
+  "describe": {
+    "prefix": "tstdesc",
+    "body": ["describe('$1', () => {", "\t$2", "});$0"],
+    "description": "Test describe (context/suite alternative)"
+  },
+  "context": {
+    "prefix": "tstcon",
+    "body": ["context('$1', () => {", "\t$0", "});"],
+    "description": "Test context (suite equivalent)"
+  },
+  "it": {
+    "prefix": "tstit",
+    "body": ["it('$1', () => {", "\t$0", "});"],
+    "description": "Test block"
   },
   "suite": {
     "prefix": "ste",
@@ -25,9 +45,9 @@
     "description": "Suite setup"
   },
   "setup": {
-    "prefix": "setup",
+    "prefix": "tstup",
     "body": ["setup(() => {", "\t$1", "});$0"],
-    "description": "Setup"
+    "description": "Test setup"
   },
   "suiteTeardown": {
     "prefix": "stedown",
@@ -35,18 +55,13 @@
     "description": "Suite teardown"
   },
   "teardown": {
-    "prefix": "teardown",
+    "prefix": "tstdown",
     "body": ["teardown(() => {", "\t$1", "});$0"],
-    "description": "Teardown"
+    "description": "Test teardown"
   },
   "test": {
     "prefix": "tst",
     "body": ["test('$1', () => {", "\t$2", "});"],
     "description": "Test"
-  },
-  "describe": {
-    "prefix": "dsc",
-    "body": ["describe('$1', () => {", "\t$2", "});$0"],
-    "description": "Describe"
   }
 }

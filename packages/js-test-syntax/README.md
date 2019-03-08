@@ -1,6 +1,6 @@
-# VS Code Mocha Snippets
+# VS JavaScript Test Syntax Snippets
 
-This extension contains [Mocha](https://mochajs.org/) code snippets used by Andrew Smith.
+This extension contains common JavaScript testing syntax snippets used by [Andrew Smith](https://andrew.codes).
 
 ## Installation
 
@@ -16,23 +16,49 @@ There you have either the option to show the already installed snippets or insta
 
 ## Snippets
 
-### before (`ba`)
+### before (`tstba`)
 ```javascript
 before(() => {
 	$1
 });$0
 ```
-### after (`aa`)
+### beforeEach (`tstbe`)
+```javascript
+beforeEach(() => {
+	$1
+});
+
+$0
+```
+### after (`tstaa`)
 ```javascript
 after(() => {
 	$1
 });$0
 ```
-### afterEach (`ae`)
+### afterEach (`tstae`)
 ```javascript
 afterEach(() => {
 	$1
 });$0
+```
+### describe (`tstdesc`)
+```javascript
+describe('$1', () => {
+	$2
+});$0
+```
+### context (`tstcon`)
+```javascript
+context('$1', () => {
+	$0
+});
+```
+### it (`tstit`)
+```javascript
+it('$1', () => {
+	$0
+});
 ```
 ### suite (`ste`)
 ```javascript
@@ -46,7 +72,7 @@ suiteSetup(() => {
 	$1
 });$0
 ```
-### setup (`setup`)
+### setup (`tstup`)
 ```javascript
 setup(() => {
 	$1
@@ -58,7 +84,7 @@ suiteTeardown(() => {
 	$1
 });$0
 ```
-### teardown (`teardown`)
+### teardown (`tstdown`)
 ```javascript
 teardown(() => {
 	$1
@@ -69,10 +95,4 @@ teardown(() => {
 test('$1', () => {
 	$2
 });
-```
-### describe (`dsc`)
-```javascript
-describe('$1', () => {
-	$2
-});$0
 ```

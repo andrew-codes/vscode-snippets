@@ -1,18 +1,28 @@
 {
-  "context": {
-    "prefix": "cyctx",
-    "body": ["context('$1', () => {", "\t$0", "});"],
-    "description": "Context"
-  },
   "visit": {
     "prefix": "cyv",
     "body": ["cy.visit('$1');$0"],
     "description": "Cypress visit"
   },
-  "get": {
+  "get element(s)": {
+    "prefix": "cyge",
+    "body": ["cy.get('$1')${0:;}"],
+    "description": "Cypress get element(s)"
+  },
+  "get elements (alternative)": {
     "prefix": "cyget",
     "body": ["cy.get('$1')${0:;}"],
-    "description": "Cypress get"
+    "description": "Cypress get (alternative keyboard shortcut)"
+  },
+  "get alias": {
+    "prefix": "cyga",
+    "body": ["cy.get('@$1')${0:;}"],
+    "description": "Cypress get aliased element(s)"
+  },
+  "get and alias element(s)": {
+    "prefix": "cygaa",
+    "body": ["cy.get('$1').as('$2')${0:;}"],
+    "description": "Cypress get element(s) and alias them"
   },
   "find": {
     "prefix": "cyf",
@@ -24,6 +34,16 @@
     "body": ["first()${0:;}"],
     "description": "Cypress first"
   },
+  "last": {
+    "prefix": "cyl",
+    "body": ["last()${0:;}"],
+    "description": "Cypress last"
+  },
+  "at index": {
+    "prefix": "cyeq",
+    "body": ["eq($1)${0:;}"],
+    "description": "Cypress element at index (eq)"
+  },
   "type": {
     "prefix": "cyt",
     "body": ["type('$1')${0:;}"],
@@ -34,7 +54,7 @@
     "body": ["contains(${2:'$3', }'$1')${0:;}"],
     "description": "Cypress contains"
   },
-  "clk": {
+  "click": {
     "prefix": "cyc",
     "body": ["\nclick()${0:;}"],
     "description": "Cypress click"

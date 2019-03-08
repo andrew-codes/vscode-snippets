@@ -1,6 +1,6 @@
 # VS Code Cypress Snippets
 
-This extension contains [Cypress](https://cypress.io/) code snippets used by Andrew Smith. Work in Progress.
+This extension contains [Cypress](https://cypress.io/) code snippets used by [Andrew Smith](https://andrew.codes). Work in Progress.
 
 ## Installation
 
@@ -16,19 +16,25 @@ There you have either the option to show the already installed snippets or insta
 
 ## Snippets
 
-### context (`cyctx`)
-```javascript
-context('$1', () => {
-	$0
-});
-```
 ### visit (`cyv`)
 ```javascript
 cy.visit('$1');$0
 ```
-### get (`cyget`)
+### get element(s) (`cyge`)
 ```javascript
 cy.get('$1')${0:;}
+```
+### get elements (alternative) (`cyget`)
+```javascript
+cy.get('$1')${0:;}
+```
+### get alias (`cyga`)
+```javascript
+cy.get('@$1')${0:;}
+```
+### get and alias element(s) (`cygaa`)
+```javascript
+cy.get('$1').as('$2')${0:;}
 ```
 ### find (`cyf`)
 ```javascript
@@ -38,6 +44,14 @@ find('$1')${0:;}
 ```javascript
 first()${0:;}
 ```
+### last (`cyl`)
+```javascript
+last()${0:;}
+```
+### at index (`cyeq`)
+```javascript
+eq($1)${0:;}
+```
 ### type (`cyt`)
 ```javascript
 type('$1')${0:;}
@@ -46,7 +60,7 @@ type('$1')${0:;}
 ```javascript
 contains(${2:'$3', }'$1')${0:;}
 ```
-### clk (`cyc`)
+### click (`cyc`)
 ```javascript
 
 click()${0:;}

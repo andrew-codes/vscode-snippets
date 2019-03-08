@@ -1,6 +1,6 @@
 # VS Code Redux (when using React) snippets
 
-This extension contains code snippets for [Redux](https://redux.js.org/) when used with [Reactjs](https://facebook.github.io/react/).
+This extension contains code snippets for [Redux](https://redux.js.org/) when used with [Reactjs](https://facebook.github.io/react/) (used by [Andrew Smith](https://andrew.codes)).
 
 ## Installation
 

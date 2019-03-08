@@ -1,6 +1,6 @@
 # VS Code Reactjs snippets
 
-This extension contains code snippets for [Reactjs](https://facebook.github.io/react/) used by Andrew Smith.
+This extension contains code snippets for [Reactjs](https://facebook.github.io/react/) used by [Andrew Smith](https://andrew.codes).
 
 ## Installation
 

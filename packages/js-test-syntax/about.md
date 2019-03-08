@@ -1,6 +1,6 @@
-# VS Code Cypress Snippets
+# VS JavaScript Test Syntax Snippets
 
-This extension contains [Cypress](https://cypress.io/) code snippets used by Andrew Smith. Work in Progress.
+This extension contains common JavaScript testing syntax snippets used by [Andrew Smith](https://andrew.codes).
 
 ## Installation
 
@@ -13,20 +13,3 @@ There you have either the option to show the already installed snippets or insta
 - TypeScript (.ts)
 - JavaScript React (.jsx)
 - TypeScript React (.tsx)
-
-## Snippets
-
-### beforeEach (`be`)
-```javascript
-beforeEach(() => {
-	$1
-});
-
-$0
-```
-### it (`it`)
-```javascript
-it('$1', () => {
-	$0
-});
-```
